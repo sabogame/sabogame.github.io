@@ -22,7 +22,7 @@ hr {
         display: flex;
         justify-content: center; /* Untuk menempatkan item di tengah secara horizontal */
         align-items: center; /* Untuk menempatkan item di tengah secara vertikal */
-        gap: 20px; /* Jarak antara setiap item */
+        gap: 100px; /* Jarak antara setiap item */
         flex-wrap: wrap; /* Jika tidak cukup ruang, item akan pindah ke baris baru */
     }
 
@@ -48,4 +48,5 @@ hr {
 a {
     color: #07fa58; /* The green color from the HTML */
     text-decoration: none;
+
 }
