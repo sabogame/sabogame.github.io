@@ -29,14 +29,14 @@ hr {
 .btn {
     background-color: #fcfffd; /* A nice blue color for the button */
     color: black;
-    padding: 15px 32px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 23px;
+    font-size: 20px;
     margin: 10px 0;
     cursor: pointer;
-    border-radius: 8px; /* Rounded corners for a modern look */
+    border-radius: 10px; /* Rounded corners for a modern look */
     border: none;
     transition: background-color 0.3s ease;
 }
@@ -50,3 +50,4 @@ a {
     text-decoration: none;
 
 }
+
