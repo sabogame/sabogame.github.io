@@ -1,0 +1,51 @@
+body {
+    background-color: #00000a; /* A dark gray background */
+    color: #f0f0f0; /* Light gray text for contrast */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    color: #fadd05;
+    font-size: 1.7em;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #fadd05; /* A subtle divider line */
+    width: 80%;
+}
+
+#menu {
+        display: flex;
+        justify-content: center; /* Untuk menempatkan item di tengah secara horizontal */
+        align-items: center; /* Untuk menempatkan item di tengah secara vertikal */
+        gap: 20px; /* Jarak antara setiap item */
+        flex-wrap: wrap; /* Jika tidak cukup ruang, item akan pindah ke baris baru */
+    }
+
+.btn {
+    background-color: #fcfffd; /* A nice blue color for the button */
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #07db23; /* Darken the button on hover */
+}
+
+a {
+    color: #07fa58; /* The green color from the HTML */
+    text-decoration: none;
+}
