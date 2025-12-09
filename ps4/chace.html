@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache.manifest">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PS4 Exploit | SABO GAMES - Offline Mode</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<header>
+<h1 class="title">PSFree Lapse 9.00</h1>
+<p class="subtitle">GoldHEN Loader • Offline Installer</p>
+</header>
+
+
+<section class="status-section">
+<h2 id="msgs">Menyiapkan Mode Offline... Harap Tunggu</h2>
+</section>
+
+
+<script>
+history.replaceState(null, null, 'index.html');
+let histLength = history.length;
+history.go(-histLength);
+
+
+function DLProgress(e) {
+let Percent = Math.round((e.loaded / e.total) * 100);
+setTimeout(() => {
+window.msgs.innerHTML = "Memasang Mode Offline: " + Percent + "%";
+}, 300);
+}
+
+
+function DisplayCacheProgress() {
+setTimeout(() => {
+window.msgs.innerHTML = "Pemasangan Sukses ✔";
+}, 1200);
+setTimeout(() => {
+window.msgs.innerHTML = "Matikan Internet & Buka Ulang Halaman Ini";
+}, 3200);
+}
+
+
+window.applicationCache.addEventListener("progress", DLProgress, false);
+window.applicationCache.oncached = DisplayCacheProgress;
+window.applicationCache.onupdateready = DisplayCacheProgress;
+</script>
+
+
+<footer>
+<p class="footer">© 2025 SABO GAMES | Offline Mode Installer</p>
+</footer>
+
+
+</body>
+</html>
