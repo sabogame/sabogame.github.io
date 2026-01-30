@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>SABOGAMES • Installing Offline Mode</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html, body {
+      height:100%;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0f0f1a;
+      color:#e0e0ff;
+      text-align:center;
+      overflow:hidden;
+    }
+    .container {
+      min-height:100%;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+    h1 {
+      font-size:48px;
+      font-weight:bold;
+      color:#ffd700;
+      text-shadow:0 0 14px rgba(255,215,0,0.8);
+      margin-bottom:24px;
+    }
+    #progress {
+      font-size:36px;
+      font-weight:bold;
+      color:#ffffff;
+      text-shadow:0 0 12px #4444ff;
+      min-height:60px;
+      margin:30px 0;
+    }
+    .footer {
+      position:absolute;
+      bottom:20px;
+      width:100%;
+      font-size:22px;
+      color:#8888cc;
+    }
+    .footer a {
+      color:#a0a0ff;
+      text-decoration:none;
+    }
+    .footer a:hover {
+      text-decoration:underline;
+    }
+
+    @media (max-width: 1280px) {
+      h1 { font-size:40px; }
+      #progress { font-size:30px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>SABOGAMES XPLOIT HOST</h1>
+  <div id="progress">Memasang Mode Offline... Tunggu ya boskuh</div>
+  
+  <div class="footer">
+    Rental PS: <a href="https://maps.app.goo.gl/8pu3D4ka8SpsLYew8" target="_blank">SABO GAMES Dawuan - Majalengka</a>
+  </div>
+</div>
+
+<script>
+function DLProgress(e) {
+  let percent = Math.round((e.loaded / e.total) * 100);
+  setTimeout(() => {
+    document.getElementById("progress").innerHTML = "Memasang Mode Offline: " + percent + "%";
+  }, 400);
+}
+
+function DisplayCacheProgress() {
+  setTimeout(() => {
+    document.getElementById("progress").innerHTML = "Pemasangan selesai Boskuh!";
+  }, 1200);
+  setTimeout(() => {
+    document.getElementById("progress").innerHTML = "Tekan Homebrew → Buka halaman ini lagi";
+  }, 3200);
+}
+
+window.applicationCache.addEventListener("progress", DLProgress, false);
+window.applicationCache.oncached = DisplayCacheProgress;
+window.applicationCache.onupdateready = DisplayCacheProgress;
+
+// Prevent history spam
+history.replaceState(null, null, 'index.html');
+</script>
+
+</body>
+</html>
