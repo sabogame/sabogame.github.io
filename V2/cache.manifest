@@ -1,4 +1,4 @@
-tuCACHE MANIFEST 
+CACHE MANIFEST 
 
 CACHE:
 ../img.jpg
@@ -24,4 +24,5 @@ module\rw.mjs
 module\utils.mjs
 module\view.mjs
 rop\900.mjs
+
 
