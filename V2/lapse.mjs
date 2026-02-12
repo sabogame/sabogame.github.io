@@ -1711,8 +1711,8 @@ export async function kexploit() {
     
      if (localStorage.ExploitLoaded === "yes" && sessionStorage.ExploitLoaded!="yes") {
 		   setTimeout(PayloadLoader("aio_patches.bin"),500);
-		   setTimeout(PayloadLoader("goldhen_2.4b18.8.bin"),500);
-		   msgs.innerHTML = "GoldHEN v2.4b18.8 Loaded ...";
+		   setTimeout(PayloadLoader("goldhen_2.4b18.9.bin"),500);
+		   msgs.innerHTML = "GoldHEN v2.4b18.9 Loaded ...";
 		   setTimeout(PayloadLoader("disableup.bin"),500);
 		   msgs.innerHTML = "Disable Update ...";
 		   setTimeout(PayloadLoader("fan.bin"),500);
@@ -1872,8 +1872,8 @@ kexploit().then(() => {
 setTimeout(PayloadLoader("aio_patches.bin"),500);
 log("AIO Fixes Applied.!");
 //Load GoldHEN :)
-setTimeout(PayloadLoader("goldhen_2.4b18.8.bin"),500);
-msgs.innerHTML = "GoldHEN v2.4b18.8 Loaded ...";
+setTimeout(PayloadLoader("goldhen_2.4b18.9.bin"),500);
+msgs.innerHTML = "GoldHEN v2.4b18.9 Loaded ...";
 //Load disableup
 setTimeout(PayloadLoader("disableup.bin"),500);
 msgs.innerHTML = "Disable Update ...";
