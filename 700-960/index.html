@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PS4 Xploit Host SABO GAMES</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<script>
+if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+</script>
+<pre id='console'></pre>
+<h1>PS4 FW 7.00 - 9.60 SABO GAMES</h1>
+<hr>
+<br>
+<h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">🚀Proses GoldHEN v2.4b18.9... Tunggu⏳</h1>
+<script>
+var uaFull = navigator.userAgent;
+var match = uaFull.match(/PlayStation 4[ /]([\d.]+)/i);
+var isPS4 = match !== null;
+var fwVersion = isPS4 ? match[1] : "Unknown";
+
+var supportedFW = ["7.00", "7.01", "7.02", "7.50", "7.51", "7.55", "8.00", "8.01", "8.03", "8.50", "8.52", "9.00", "9.03", "9.04", "9.50", "9.51", "9.60"];
+
+if (!isPS4) {
+    msgs.innerHTML = "Hanya Untuk Firmware 7.00 Sampai 9.60";
+} else if (!supportedFW.includes(fwVersion)) {
+    msgs.innerHTML = 'Unsupported Firmware: <span style="color: red;">' + fwVersion + '</span>';
+} else {
+    var script = document.createElement('script');
+    script.type = 'module';
+    script.src = "alert.js";
+    document.head.appendChild(script);
+}
+</script>
+</body>
+</html>
