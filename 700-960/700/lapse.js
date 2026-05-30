@@ -1865,8 +1865,8 @@ function runPayload(path) {
 
 kexploit().then(() => {
 	setTimeout(() => {
-		runPayload("./goldhen_2.4b18.9.bin");
-		msgs.innerHTML = "GoldHEN v2.4b18.9 Loaded ...";
+		runPayload("./goldhen_2.4b18.10.bin");
+		msgs.innerHTML = "GoldHEN v2.4b18.10 Loaded ...";
 	},500);
 }).catch(() => {
     msgs.innerHTML = "Failed to Load! Restart Your Console ...";
