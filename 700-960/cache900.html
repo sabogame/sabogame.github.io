@@ -7,14 +7,14 @@
 <body>
 <script>
 history.replaceState(null,null,'index.html');var histlength=history.length;history.go(-histlength);
-function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Memasang Mode Offline💾: " + Percent + "%";}
-function DisplayCacheProgress(){window.msgs.innerHTML="Pemasangan Sukses ✔ Udah Bisa Matikan Internet😉😉";setTimeout(function(){window.msgs.innerHTML="Tutup Browser ini Dan silahkan Buka kembali ...";},1500);}
+function DLProgress(e){Percent=(Math.round(e.loaded / e.total * 100));window.msgs.innerHTML="Memasang Mode Offline: " + Percent + "%";}
+function DisplayCacheProgress(){window.msgs.innerHTML="Pemasangan Sukses ✔ Udah Bisa Matikan Internet";setTimeout(function(){window.msgs.innerHTML="Tutup Browser ini Dan silahkan Buka kembali ...";},1500);}
 window.applicationCache.addEventListener("progress",DLProgress,false);
 window.applicationCache.oncached=function(e){DisplayCacheProgress();};
 window.applicationCache.onupdateready=function(e){DisplayCacheProgress();};
 window.applicationCache.onerror=function(e){window.msgs.innerHTML="Pemasangan Mode Offline Error Hapus Chace Refresh Dan Mulai Dari Awal ...";};
 </script>
-<h1>PS4 FW 7.00 - 9.60 PSFree Lapse 9.00 GoldHEN_v2.4b18.9</h1>
+<h1>PS4 FW 7.00 - 9.60 PSFree Lapse 9.00 GoldHEN_v2.4b18.10</h1>
 <hr>
 <br>
 <h1 id=msgs style="font-size: 30px;margin-top: 77px;margin-bottom: 455px;">Mulai Memasang Mode Offline....</h1>
